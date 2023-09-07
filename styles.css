@@ -1,0 +1,64 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header,
+.links,
+.images,
+.first,
+.second,
+.inner,
+.fourth,
+.footer {
+  display: flex;
+}
+
+.links,
+.images {
+  list-style: none;
+}
+
+body,
+.second,
+.inner {
+  flex-direction: column;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second,
+.fourth,
+.footer {
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  justify-content: center;
+  padding: 100px 350px;
+}
+
+.images {
+  gap: 8px;
+}
+
+.quote {
+  align-self: center;
+}
+
+.author {
+  align-self: flex-end;
+}
