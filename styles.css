@@ -4,12 +4,37 @@
 
 body {
   min-height: 100vh;
+  margin: 0%;
   display: flex;
   justify-content: space-between;
+  background-image: url(./images/caves-cropped.png);
+  background-repeat: repeat-y;
+  background-size: contain;
 }
 
 a {
   text-decoration: none;
+  /* color: white; */
+}
+
+li img {
+  width: 200px;
+  height: auto;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.second ul li {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.second ul li div {
+  text-align: center;
+  margin-top: 5px;
 }
 
 .header,
@@ -17,6 +42,7 @@ a {
 .images,
 .first,
 .second,
+.third,
 .inner,
 .fourth,
 .footer {
@@ -37,9 +63,12 @@ body,
 .header {
   justify-content: space-between;
   align-items: center;
+  background-color: #603829;
 }
 
+.first,
 .second,
+.third,
 .fourth,
 .footer {
   justify-content: center;
@@ -48,17 +77,82 @@ body,
 
 .inner {
   justify-content: center;
-  padding: 100px 350px;
 }
 
 .images {
-  gap: 8px;
+  gap: 52px;
+  padding: 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .quote {
   align-self: center;
+  font-style: italic;
+  max-width: 610px;
 }
 
 .author {
   align-self: flex-end;
+}
+
+.title,
+.links {
+  padding: 8px;
+}
+
+.title {
+  margin-left: 32px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.links {
+  margin-right: 32px;
+}
+
+.links a {
+  margin: 8px;
+}
+
+.bigText {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.container {
+  max-width: 500px;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  margin: 100px;
+  margin-bottom: 0px;
+}
+
+.paragraph {
+  margin-bottom: 16px;
+}
+
+.topButton {
+  padding: 8px 16px;
+  background-color: #9f6c59;
+  border-radius: 5px;
+}
+
+.smallerText {
+  font-size: 22px;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.footer div {
+    margin: 20px 0px;
 }
