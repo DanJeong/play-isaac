@@ -33,6 +33,15 @@ li img {
   height: auto;
 }
 
+.links li {
+  display: flex;
+  justify-content: center;
+}
+
+.links li a {
+  text-align: center;
+}
+
 .second ul li {
   display: flex;
   flex-direction: column;
@@ -130,6 +139,7 @@ body,
 
 .links {
   margin-right: 32px;
+  justify-content: center;
 }
 
 .links a {
